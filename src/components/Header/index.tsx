@@ -34,8 +34,10 @@ export default function Header(){
             <>
                 <header className={`${styles.header}`}>
                     <div className={`flex justify-between align-center ${styles['header-container']}`}>
-                        {width <= 1300 && <Image priority src={menuLogo} alt='Dropdown Menu' />}
-                        <Image priority src={audiophileLogo} alt="Audiophile Logo" />
+                        <div className={`flex align-center`} style={{gap:"42px"}}>
+                            {width <= 1300 && <Image priority src={menuLogo} alt='Dropdown Menu' />}
+                            <Image priority src={audiophileLogo} alt="Audiophile Logo" />
+                        </div>
                         {width >=1300 && <Navbar />}
                         <Image priority src={cartLogo} alt={"Cart Icon"} />
                     </div>
