@@ -3,11 +3,11 @@
 .navbar {
     width: 429px;
     gap:34px;
-    color: var(--theme-color1)
+    font-size: 15px;
 }
 
 .navbar-container {
     min-width: 769px;
-    max-width: 1110px;
+    max-width: var(--content-width);
 
 }
