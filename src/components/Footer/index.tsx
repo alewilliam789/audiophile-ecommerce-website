@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import Navbar from '../Navbar';
 
+import audiophileLogo from '../../assets/shared/desktop/logo.svg';
 import facebookLogo from '../../assets/shared/desktop/icon-facebook.svg';
 import twitterLogo from '../../assets/shared/desktop/icon-twitter.svg';
 import instagramLogo from '../../assets/shared/desktop/icon-instagram.svg';
@@ -16,7 +17,10 @@ export default function Footer(){
         <>
             <footer className={styles.footer}>
                 <div className={`${styles['footer-container']}`}>
-                    <Navbar />
+                    <section className='flex justify-between flex-wrap'>
+                        <Image priority src={audiophileLogo} alt='Audiophile Logo' />
+                        <Navbar />
+                    </section>
                     <section className={`flex justify-between`}>
                             <p>
                                 Audiophile is an all in one stop to fulfill your

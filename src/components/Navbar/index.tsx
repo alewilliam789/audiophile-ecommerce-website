@@ -16,13 +16,8 @@ export default function Navbar(){
     })
 
     return (
-        <div className={`flex justify-between align-center ${styles['navbar-container']}`}>
-                    <Image priority src={audiophileLogo} alt={"Audiophile Logo"} />
-                    <nav className={`flex justify-end align-center ${styles.navbar}`}>
+                    <nav className={`flex justify-between align-center ${styles.navbar}`}>
                         {links}
                     </nav>
-        </div>
     )
-
-
 }

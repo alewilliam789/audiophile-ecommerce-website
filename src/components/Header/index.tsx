@@ -27,6 +27,7 @@ export default function Header(){
         <>
             <header className={`${styles.header}`}>
                 <div className={`flex justify-between ${styles['header-container']}`}>
+                    <Image priority src={audiophileLogo} alt="Audiophile Logo" />
                     <Navbar />
                     <Image priority src={cartLogo} alt={"Cart Icon"} />
                 </div>
