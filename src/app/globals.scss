@@ -1,5 +1,15 @@
 @import '~normalize.css/normalize.css';
 
+
+:root {
+
+  --theme-color1: white;
+  --theme-color2: black;
+  --theme-color3: rgb(216,125,74);
+  
+
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -46,13 +56,7 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: white;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  background: var(--theme-color1)
 }
 
 .flex {
