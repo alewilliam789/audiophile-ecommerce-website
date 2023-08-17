@@ -2,18 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
-import Navbar from '../Navbar';
-
 import audiophileLogo from '../../assets/shared/desktop/logo.svg';
-import cartLogo from '../../assets/shared/desktop/icon-cart.svg';
 
 import styles from './styles.module.scss';
 
 
-
-
-export default function Header(){
-
+export default function Navbar(){
     const linkNames = ["HOME", "HEADPHONES","SPEAKERS", "EARPHONES"]
 
     const links = linkNames.map((linkName)=>{
@@ -24,13 +18,13 @@ export default function Header(){
     })
 
     return (
-        <>
-            <header className={`${styles.header}`}>
-                <div className={`flex justify-between ${styles['header-container']}`}>
-                    <Navbar />
-                    <Image priority src={cartLogo} alt={"Cart Icon"} />
-                </div>
-            </header>
-        </>
+        <div className={`flex justify-between align-center ${styles['navbar-container']}`}>
+                    <Image priority src={audiophileLogo} alt={"Audiophile Logo"} />
+                    <nav className={`flex justify-center align-center ${styles.navbar}`}>
+                        {links}
+                    </nav>
+        </div>
     )
+
+
 }
