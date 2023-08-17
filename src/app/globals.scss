@@ -6,6 +6,10 @@
   --theme-color1: white;
   --theme-color2: black;
   --theme-color3: rgb(216,125,74);
+  --theme-color4: rgb(135,135,135);
+
+
+  --content-width: 1110px;
   
 
 }
@@ -59,6 +63,23 @@ body {
   background: var(--theme-color1)
 }
 
+sub {
+  color: var(--theme-color4);
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+p {
+  color: var(--theme-color4);
+}
+
+a {
+  text-decoration: none;
+  color: var(--theme-color1);
+  font-weight: bold;
+}
+
 .flex {
   display: flex;
   
@@ -76,12 +97,20 @@ body {
   &-between {
     justify-content: space-between;
   }
+
+  &-end {
+    justify-content: end;
+  }
 }
 
 .align {
 
   &-center {
     align-items: center;
+  }
+
+  &-end {
+    align-items: end;
   }
 }
 
