@@ -1,4 +1,6 @@
-import Link from 'next/link';
+'use client'
+
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
 
@@ -8,13 +10,13 @@ import styles from './styles.module.scss';
 
 
 export default function Navbar(){
+
+    const router = useRouter();
+
     const linkNames = ["HOME", "HEADPHONES","SPEAKERS", "EARPHONES"]
 
     const links = linkNames.map((linkName)=>{
-        return <Link href={`/${linkName == 'HOME' ? "": `${linkName.toLowerCase()}`}`}>
-            <h6>{linkName}</h6>
-        </Link>
-
+        return <h6 onClick={()=>{router.push(`/${linkName == 'HOME' ? "": `${linkName.toLowerCase()}`}`)}}>{linkName}</h6>
     })
 
     return (
