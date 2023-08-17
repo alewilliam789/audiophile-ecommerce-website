@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 
 
-export default function useWindowWidth(){
+export default function useScreenWidth(){
 
     function getWindowWidth(){
         const {innerWidth: width} = window;
