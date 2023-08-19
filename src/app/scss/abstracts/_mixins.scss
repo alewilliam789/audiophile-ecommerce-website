@@ -10,3 +10,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+@mixin grid($columns, $width : 1fr){
+    display: grid;
+    grid-template-columns: repeat($columns, $width);
+}
