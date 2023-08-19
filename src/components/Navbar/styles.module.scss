@@ -1,11 +1,11 @@
 
 
-.navbar {
+.c-navbar {
     width: 429px;
 }
 
-.navbar--flex {
-    @include mixins.flex;
-    justify-content: space-between;
+.l-grid {
+    @include mixins.grid(4);
+    justify-items: end;
     gap:34px;
 }

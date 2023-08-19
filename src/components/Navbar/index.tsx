@@ -16,7 +16,7 @@ export default function Navbar(){
     })
 
     return (
-            <nav className={`styles.navbar ${styles['navbar--flex']}`}>
+            <nav className={`${styles['c-navbar']} ${styles['l-grid']}`}>
                 {links}
             </nav>
     )
