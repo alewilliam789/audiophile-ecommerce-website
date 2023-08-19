@@ -1,0 +1,30 @@
+html, body, main {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+
+}
+
+
+body {
+    background: var(--theme-color1)
+}
+
+p {
+    color: var(--theme-color4);
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--theme-color1);
+    font-weight: bold;
+}
+
+
+sub {
+    color: var(--theme-color4);
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+}

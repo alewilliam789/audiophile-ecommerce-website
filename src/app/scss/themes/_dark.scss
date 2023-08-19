@@ -1,0 +1,18 @@
+@media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+  }
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --theme-color1: lightgray;
+      --theme-color2: black;
+      --theme-color3: rgb(216,125,74);
+      --theme-color4: rgb(135,135,135);
+  
+  
+      --content-width: 1110px;
+    }
+  }
