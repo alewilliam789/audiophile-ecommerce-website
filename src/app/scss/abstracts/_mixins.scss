@@ -15,3 +15,16 @@
     display: grid;
     grid-template-columns: repeat($columns, $width);
 }
+
+@mixin media-query($screen-size){
+    @if $screen-size == mobile {
+        @media(max-width: 767px){
+            @content;
+        }
+    }
+    @else if $screen-size == tablet {
+        @media (max-width: 1300px){
+            @content;
+        }
+    }
+}
