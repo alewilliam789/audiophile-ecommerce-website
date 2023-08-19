@@ -33,8 +33,8 @@ export default function Header(){
         return (
             <>
                 <header className={`${styles.header}`}>
-                    <div className={`flex justify-between align-center ${styles['header-container']}`}>
-                        <div className={`flex align-center`} style={{gap:"42px"}}>
+                    <div className={`${styles['header__content']}`}>
+                        <div className={`${styles['layout__mobile']}`}>
                             {width <= 1300 && <Image priority src={menuLogo} alt='Dropdown Menu' />}
                             <Image priority src={audiophileLogo} alt="Audiophile Logo" />
                         </div>
