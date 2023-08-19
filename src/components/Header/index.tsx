@@ -32,14 +32,14 @@ export default function Header(){
 
         return (
             <>
-                <header className={`${styles.header}`}>
-                    <div className={`${styles['header--grid']}`}>
-                        <div className={`${styles['header--mobile']}`}>
+                <header className={`${styles[`c-header`]} ${styles['l-flex']}`}>
+                    <div className={`${styles['c-header__content']} ${styles['l-grid']}`}>
+                        <div className={`${styles['l-grid__item']}`}>
                             {width <= 1300 && <Image priority src={menuLogo} alt='Dropdown Menu' />}
                             <Image priority src={audiophileLogo} alt="Audiophile Logo" />
                         </div>
                         {width >=1300 && <Navbar />}
-                        <Image priority src={cartLogo} alt={"Cart Icon"} />
+                        <Image className={`${styles['l-grid__item--end']}`} priority src={cartLogo} alt={"Cart Icon"} />
                     </div>
                 </header>
             </>

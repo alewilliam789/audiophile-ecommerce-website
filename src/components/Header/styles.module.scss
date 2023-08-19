@@ -1,22 +1,40 @@
-.header {
+.c-header {
     height: 97px;
     width: 100%;
     padding-top: 39px;
     background-color: var(--theme-color2);
 }
 
-
-.header--grid{
-    @include mixins.grid(3);
-    justify-items: center;
+.c-header__content {
+    width: var(--content-width);
 }
 
-.header--flex {
+.l-flex {
     @include mixins.flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.header--mobile {
+.l-grid{
+    @include mixins.grid(3, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    @include mixins.media-query(tablet){
+        @include mixins.grid(2, 1fr);
+        gap: 76px;
+    }
+}
+
+.l-grid__item {
+    justify-self: start;
     @include mixins.flex;
-    gap: 42px;
+    gap: 34px;
+
+    @include mixins.media-query(mobile){
+        gap: 76px;
+    }
+}
+
+.l-grid__item--end {
+    justify-self: end;
 }
