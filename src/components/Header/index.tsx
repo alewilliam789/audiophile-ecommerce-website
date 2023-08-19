@@ -33,8 +33,8 @@ export default function Header(){
         return (
             <>
                 <header className={`${styles.header}`}>
-                    <div className={`${styles['header__content']}`}>
-                        <div className={`${styles['layout__mobile']}`}>
+                    <div className={`${styles['header--grid']}`}>
+                        <div className={`${styles['header--mobile']}`}>
                             {width <= 1300 && <Image priority src={menuLogo} alt='Dropdown Menu' />}
                             <Image priority src={audiophileLogo} alt="Audiophile Logo" />
                         </div>

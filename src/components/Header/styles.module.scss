@@ -1,17 +1,22 @@
 .header {
     height: 97px;
+    width: 100%;
     padding-top: 39px;
     background-color: var(--theme-color2);
 }
 
-.header__content {
-    @include mixins.flex;
-    justify-content: space-between;
-    width: 77%;
-    margin: 0px auto;
+
+.header--grid{
+    @include mixins.grid(3);
+    justify-items: center;
 }
 
-.layout__mobile {
+.header--flex {
+    @include mixins.flex;
+    justify-content: space-between;
+}
+
+.header--mobile {
     @include mixins.flex;
     gap: 42px;
 }
