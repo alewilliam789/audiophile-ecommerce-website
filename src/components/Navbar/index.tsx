@@ -16,8 +16,8 @@ export default function Navbar(){
     })
 
     return (
-                    <nav className={`flex justify-between align-center ${styles.navbar}`}>
-                        {links}
-                    </nav>
+            <nav className={`styles.navbar ${styles['navbar--flex']}`}>
+                {links}
+            </nav>
     )
 }
