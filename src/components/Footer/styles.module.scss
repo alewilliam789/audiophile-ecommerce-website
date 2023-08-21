@@ -1,26 +1,112 @@
 
-.footer {
+.c-footer {
     height: 365px;
+
+    @include mixins.media-query(tablet){
+        height: 400px;
+    }
+
+    @include mixins.media-query(mobile){
+        height: 654px;
+    }
+}
+
+.c-footer--primary {
     color: var(--theme-color1);
     background-color: var(--theme-color2);
+}
+
+.c-footer__content {
+    width: var(--content-width);
     padding-top: 75px;
-}
 
-.footer-container {
-    width: 77%;
-    margin: 0px auto;
-
-    section {
-        margin-top: 36px;
-        margin-bottom: 69px;
+    @include mixins.media-query(tablet){
+        padding-top: 57px;
     }
 
-    p {
-        width: 570px;
+    @include mixins.media-query(mobile){
+        padding-top: 52px;
     }
 }
 
-.footer-social-media-container {
-    gap: 16px;
+.c-navbar {
+    @include mixins.media-query(tablet){
+        margin-bottom: 32px;
+    }
+}
+
+.c-audiophile-logo {
+    @include mixins.media-query(desktop){
+        margin-bottom: 36px;
+    }
+
+    @include mixins.media-query(tablet){
+        margin-bottom: 32px;
+    }
+}
+
+
+
+.c-subcontainer {
+    @include mixins.media-query(desktop){
+        margin-top: 56px;
+    }
+
+    @include mixins.media-query(tablet){
+        margin-top: 80px;
+    }
+}
+
+.l-grid {
+    display: grid;
+    grid-template-columns: 575px 1fr;
+    min-width: fit-content;
+    align-items: start;
+
+    @include mixins.media-query(tablet){
+        grid-template-columns: var(--content-width);
+        min-width: fit-content;
+    }
+
+    @include mixins.media-query(mobile){
+        text-align: center;
+        grid-template-columns: var(--content-width);
+        justify-content: center;
+        gap: 48px;
+    }
+}
+
+.l-grid__item--nav {
+    justify-self: end;
+    align-self: start;
+
+    @include mixins.media-query(tablet){
+        justify-self: start;
+    }
+}
+
+.l-grid__item--social-links {
     align-self: end;
+    justify-self: end;
+
+    @include mixins.media-query(mobile){
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+.l-flex--footer {
+    @include mixins.flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.l-flex--social-links {
+    @include mixins.flex;
+    gap: 16px;
+}
+
+.l-flex--mobile {
+    @include mixins.flex;
+    justify-content: space-between;
 }
