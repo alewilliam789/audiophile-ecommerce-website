@@ -27,4 +27,10 @@
             @content;
         }
     }
+
+    @else if $screen-size == desktop {
+        @media (min-width:1300px){
+            @content
+        }
+    }
 }
