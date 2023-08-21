@@ -25,35 +25,64 @@
     }
 
     @include mixins.media-query(mobile){
-        padding-top: 52px;
-    }
-}
-
-.c-navbar {
-    @include mixins.media-query(tablet){
-        margin-bottom: 32px;
-    }
-}
-
-.c-audiophile-logo {
-    @include mixins.media-query(desktop){
-        margin-bottom: 36px;
+        padding-top: 48px;
     }
 
-    @include mixins.media-query(tablet){
-        margin-bottom: 32px;
+
+    & img[alt="Audiophile Logo"] {
+        @include mixins.media-query(desktop){
+            margin-bottom: 36px;
+        }
+    
+        @include mixins.media-query(tablet){
+            margin-bottom: 32px;
+        }
+    
+        @include mixins.media-query(mobile){
+            margin-bottom: 0px;
+        }
     }
-}
+
+    & nav {
+        justify-self: end;
+        align-self: start;
+
+        @include mixins.media-query(tablet){
+            margin-bottom: 32px;
+        }
+    
+        @include mixins.media-query(mobile){
+            margin-bottom: 0px;
+        }
 
 
+        @include mixins.media-query(tablet){
+            justify-self: start;
+        }
 
-.c-subcontainer {
-    @include mixins.media-query(desktop){
-        margin-top: 56px;
+        @include mixins.media-query(mobile){
+            justify-self: center;
+        }
     }
 
-    @include mixins.media-query(tablet){
-        margin-top: 80px;
+    & p {
+        @include mixins.media-query(mobile){
+            height: 150px;
+        }
+    }
+
+    > div {
+        @include mixins.media-query(desktop){
+            margin-top: 56px;
+        }
+    
+        @include mixins.media-query(tablet){
+            margin-top: 80px;
+        }
+    
+        @include mixins.media-query(mobile){
+            margin-top: 0px;
+        }
     }
 }
 
@@ -66,22 +95,14 @@
     @include mixins.media-query(tablet){
         grid-template-columns: var(--content-width);
         min-width: fit-content;
+        min-height: fit-content;
     }
 
     @include mixins.media-query(mobile){
         text-align: center;
         grid-template-columns: var(--content-width);
-        justify-content: center;
+        justify-items: center;
         gap: 48px;
-    }
-}
-
-.l-grid__item--nav {
-    justify-self: end;
-    align-self: start;
-
-    @include mixins.media-query(tablet){
-        justify-self: start;
     }
 }
 

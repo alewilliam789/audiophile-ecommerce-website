@@ -40,11 +40,9 @@ export default function Footer(){
         <>
             <footer className={`${styles[`c-footer`]} ${styles['c-footer--primary']} ${styles['l-flex--footer']}`}>
                 <div className={`${styles['c-footer__content']} ${styles['l-grid']}`}>
-                    <Image priority className={`${styles['c-audiophile-logo']}`} src={audiophileLogo} alt='Audiophile Logo' />
-                    <div className={`${styles['c-navbar']} ${styles['l-grid__item--nav']}`}>
-                        <Navbar />
-                    </div>
-                    <p className={`${styles['l-grid__item--footer-text']}`}>
+                    <Image priority src={audiophileLogo} alt='Audiophile Logo' />
+                    <Navbar />
+                    <p>
                         Audiophile is an all in one stop to fulfill your
                         audio needs. We're a small team of music lovers
                         and sound specialists who are devoted to helping
@@ -52,7 +50,7 @@ export default function Footer(){
                         visit our demo facility - we're open 7 days a week.
                     </p>
                     {width>=1300 && <SocialMediaLinks />}
-                    <div className={`${styles['c-subcontainer']} ${styles['l-flex--mobile']} ${styles['l-grid__item']}`}>
+                    <div className={`${styles['l-flex--mobile']}`}>
                         <sub>Copyright 2021. All Rights Reserved</sub>
                         {(width <= 1300 && width>=768) && <SocialMediaLinks />}
                     </div>
