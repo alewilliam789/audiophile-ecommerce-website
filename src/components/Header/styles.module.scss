@@ -19,6 +19,7 @@
     height: 28px;
     @include mixins.grid(3, 1fr);
     justify-content: center;
+    justify-items: center;
 
     @include mixins.media-query(tablet){
         @include mixins.grid(2, 1fr);
