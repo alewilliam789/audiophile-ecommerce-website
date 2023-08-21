@@ -4,7 +4,7 @@ const path = require('path');
 const nextConfig = {
     sassOptions: {
         includePaths: ['./src'],
-        prependData: '@use "@/app/scss/abstracts/mixins" as mixins; @use "@/app/scss/abstracts/functions" as functions;'
+        prependData: '@use "./src/app/scss/abstracts/mixins" as mixins;'
     }
 }
 

@@ -1,23 +1,24 @@
 .c-header {
     height: 97px;
     width: 100%;
-    padding-top: 39px;
     background-color: var(--theme-color2);
 }
 
 .c-header__content {
+    margin-top: 32px;
     width: var(--content-width);
 }
 
 .l-flex {
     @include mixins.flex;
     justify-content: center;
+    align-items: start;
 }
 
 .l-grid{
+    height: 28px;
     @include mixins.grid(3, 1fr);
     justify-content: center;
-    align-items: center;
 
     @include mixins.media-query(tablet){
         @include mixins.grid(2, 1fr);
