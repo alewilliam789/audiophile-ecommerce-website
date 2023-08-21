@@ -4,8 +4,8 @@
     width: 429px;
 }
 
-.l-grid {
-    @include mixins.grid(4);
-    justify-items: end;
-    gap:34px;
+.l-flex {
+    @include mixins.flex;
+    justify-content: space-between;
+    gap: 34px;
 }
