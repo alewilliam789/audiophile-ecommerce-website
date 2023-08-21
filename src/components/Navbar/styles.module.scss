@@ -2,10 +2,19 @@
 
 .c-navbar {
     width: 429px;
+
+    @include mixins.media-query(mobile){
+        height: 148px;
+    }
 }
 
 .l-flex {
     @include mixins.flex;
     justify-content: space-between;
     gap: 34px;
+
+    @include mixins.media-query(mobile){
+        @include mixins.flex-column;
+        gap: 16px;
+    }
 }
