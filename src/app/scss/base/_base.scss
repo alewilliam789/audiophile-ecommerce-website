@@ -10,6 +10,10 @@ body {
     background: var(--theme-color1)
 }
 
+p, a {
+    line-height: 25px;
+}
+
 p {
     color: var(--theme-color4);
     margin: 0px 0px;
