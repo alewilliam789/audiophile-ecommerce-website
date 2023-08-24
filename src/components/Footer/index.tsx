@@ -39,6 +39,7 @@ export default function Footer(){
     return (
         <>
             <footer className={`${styles[`c-footer`]} ${styles['c-footer--primary']} ${styles['l-flex--footer']}`}>
+                <div className={`${styles['c-footer__tab']}  ${styles['l-flex--tab']}`}><div className={`${styles['c-footer__tab--orange']}`}></div></div>
                 <div className={`${styles['c-footer__content']} ${styles['l-grid']}`}>
                     <Image priority src={audiophileLogo} alt='Audiophile Logo' />
                     <Navbar />
